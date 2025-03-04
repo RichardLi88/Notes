@@ -22,7 +22,8 @@
 - Thermionic Valves and Relays
 - Discrete Germanium Transistors
 - Discrete Silicon Transistors and low density integrated circuits
-- Computer performance tracks Moore's Law
+- Computer performance tracks [[#^a20f7d|Moore's Law]]
+- 
 
 ## What's in a Chip?
 - data cache
@@ -44,3 +45,33 @@
 - can implement the same machine architecture in a range of different types of digital logic
 - in practice, the "logical architecture" is usually adapted in a manner which makes it most convenient for the hardware type we intend to use
 - Mostly CMOS
+
+#### VLIW Architecture
+- VLIW: Very Long Instruction Word
+- CPU design that allows for parallel execution of multiple instructions by packing them into a single, long instruction word
+	- this lets the compiler to determine which operations can be executed simultaneously, leading to increased performance with a relatively simpler hardware design compared to other parallel processing methods
+- Uses [[#^68bfaf|Integrated Circuits]]
+	
+
+
+
+#### Integrated Circuits
+
+^68bfaf
+- much smaller compared to vacuum tubes
+- more energy-efficient compared to vacuum tubes
+
+#### Vacuum Tubes
+- very large
+- use a lot of power
+- get hot
+	- a significant portion of their operation relies on heating a filament to a high temperature
+- don't last very long (less reliable)
+
+
+#### Moore's Law
+
+^a20f7d
+
+- a prediction made by Intel co-founder Gordon E. Moore in 1965 that the number of transistors on a microchip would double approximately every two years, leading to an exponential increase in processing power and a decrease in cost per transistor
+[[Act]]

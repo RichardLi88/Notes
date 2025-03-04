@@ -35,3 +35,6 @@
 - The delay between an input change(s) and the resulting output change is the gate delay denoted by t$_g$
 
 [[Notes/FIT3159/Activities#^a3bc6e|Activity 1]]
+
+## Operations in Binary
+![[Pasted image 20250304152817.png]]
