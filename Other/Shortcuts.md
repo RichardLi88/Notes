@@ -1,9 +1,10 @@
 
 ## VS Code
 
-| **Primary Sidebar**       | Ctrl + B                |
+| Shortcut name             | Control                 |
 | ------------------------- | ----------------------- |
-| **Secondary Sidebar**     | Ctrl + Alt + B          |
+| Primary Sidebar           | Ctrl + B                |
+| Secondary Sidebar         | Ctrl + Alt + B          |
 | Panel/Integrated Terminal | Ctrl + J                |
 | Search                    | Ctrl + F                |
 | Find all similar words    | Ctrl + D                |
@@ -15,3 +16,19 @@
 | Copy line down            | Alt + Shift + DownArrow |
 
 ## NeoVim
+
+| Shortcut name | Control |
+| ------------- | ------- |
+|               |         |
+
+
+## Linux Terminal
+
+| Command        | Usage            | Extra Flags          |
+| -------------- | ---------------- | -------------------- |
+| mkdir          | make directory   |                      |
+| rmdir          | remove directory |                      |
+| touch filename | create file      |                      |
+| rm filename    | remove file      | -rf: recursive force |
+| ls             | list files       |                      |
+|                |                  |                      |
