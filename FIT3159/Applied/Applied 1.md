@@ -40,10 +40,12 @@ $$
 F(A, B, C) = A + C
 $$
 #### Question 5:
-Gate delay (also propagation delay) is the time it takes after changing the input for it to reach its stable output
+Gate delay (also propagation delay) is the time it takes after changing the input for it to reach its stable output.
 - race conditions can occur 
 - Example:
 	- passing $A$, and $\overline A$ into an AND gate (with input $A$ as $0$ )
 	- switching input $A$ from $0$ to $1$
 	- causes output to spike to $1$ for a period due to delay in inverter converting $A$ to $\overline A$.
 
+#### Question 6
+- 
