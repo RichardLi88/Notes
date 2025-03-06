@@ -1,4 +1,4 @@
-## Lab 1
+j## Lab 1
 ![[Pasted image 20250306101423.png]]
 
 ## part 2
