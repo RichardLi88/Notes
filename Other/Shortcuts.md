@@ -99,12 +99,20 @@
 | :help w            | help for w            |
 | :help insert-index | help for insert index |
 | :help user-manual  | help user manual      |
+#### More
+
+| Shortcut name | What it does                    |
+| ------------- | ------------------------------- |
+| zz            | centre line to middle of screen |
+|               |                                 |
+
 ## Custom Neovim
 
-| Shortcut | Function       |
-| -------- | -------------- |
-| Ctrl + [ | Toggle Neotree |
-|          |                |
+| Shortcut        | Function              |
+| --------------- | --------------------- |
+| Ctrl + [        | Toggle Neotree        |
+| gc (in visual)  | comment out a section |
+| Alt + Shift + r | replace inside quotes |
 #### Telescope (Fuzzy finder)
 
 | Shortcut    | Function            |
@@ -138,6 +146,8 @@
 | Ctrl + Shift + t               | create new tab for terminal   |
 | Ctrl + Shift + left/rightArrow | switches between tabs         |
 | Ctrl + Shift + Layout          | Switch layout                 |
+| Ctrl + Shift + o               | new tab                       |
+| tab                            | switch tab                    |
 ## Ubuntu Shortcuts (Custom)
 
 | Shortcut               | Usage             |
