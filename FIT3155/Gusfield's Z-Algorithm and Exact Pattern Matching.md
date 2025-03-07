@@ -14,6 +14,11 @@ For a string str\[1...n], and for any i > 1 such that Z$_{1}$ > 0, a Z$_{i}$-box
 For a str\[1...n], and for all i > 1, r$_{i}$ is the right-most endpoint of all Z-boxes that begin at or before position i.
 Alterantively, r$_{i}$ is the largest value of j + Z$_{j}$ -1 over all 1 < j <= i, such that Z$_{j}$ > 0.
 
+###### Definition of l$_{i}$ 
+For a stirng str\[1...n], and for all i > 1, l$_{i}$ is the left end ofthe Z-box that ends at r$_{i}$. In case there are multiple, l$_{i}$ will be the left end of any of those Z-boxes.
+
+
+
 
 
 
