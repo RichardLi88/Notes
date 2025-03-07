@@ -104,6 +104,9 @@
 | Shortcut name | What it does                    |
 | ------------- | ------------------------------- |
 | zz            | centre line to middle of screen |
+| cib           | replace brackets                |
+| ci{} / ciB    | replace curly brackets          |
+| ci' / ci "    | replace quotes                  |
 |               |                                 |
 
 ## Custom Neovim
