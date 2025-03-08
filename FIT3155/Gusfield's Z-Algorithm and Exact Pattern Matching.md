@@ -37,7 +37,3 @@ else (if Z$_{2}$ == 0)
 - Any iteratiion that explicitly performs comparisons ends as soon as a mismatch occurs, hence there are at most n - 1 mismatches
 - the number of matches (performed explicity) is at most n, because:
 	- r$_{k}$ >= r$_{k-1}$ (for all iterations)
-	
-
-
-

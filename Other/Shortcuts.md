@@ -101,13 +101,13 @@
 | :help user-manual  | help user manual      |
 #### More
 
-| Shortcut name | What it does                    |
-| ------------- | ------------------------------- |
-| zz            | centre line to middle of screen |
-| cib           | replace brackets                |
-| ci{} / ciB    | replace curly brackets          |
-| ci' / ci "    | replace quotes                  |
-|               |                                 |
+| Shortcut name    | What it does                    |
+| ---------------- | ------------------------------- |
+| zz               | centre line to middle of screen |
+| cib              | replace brackets                |
+| ci{} / ciB       | replace curly brackets          |
+| ci' / ci "       | replace quotes                  |
+| { or } in normal | jumps over a block of code      |
 
 ## Custom Neovim
 
@@ -124,6 +124,14 @@
 | Space + f,g | Telescope live grep |
 | Space + fb  | Telescope buffers   |
 | Space +fh   | Telescope help tags |
+#### Surround
+
+| Shortcut | Usage            |
+| -------- | ---------------- |
+| ysiw(    | surround word    |
+| yss(     | surround line    |
+| ds(      | delete brackets  |
+| dst      | remove html tags |
 
 ## Linux Terminal
 
