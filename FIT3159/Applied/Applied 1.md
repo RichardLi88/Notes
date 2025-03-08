@@ -1,5 +1,4 @@
 #### Question 1:
-
 Moore’s Law is an observation that the number of transistors on an integrated circuit will roughly double every 2 years, with a minimal increase to the cost in production.
 Importance:
 - This projection is important as it enables long-term planning for research and development. 
@@ -13,7 +12,6 @@ Advantages:
 - enables parallel processing and enhances multi-threading
 - more reliable as it possess redundant processing power
 - improved multitasking and hence user experience 
-
 Disadvantages
 - can be more complex, requires software configuration to take advantage of multiple cores -> making development and maintenance of software harder
 - increased heat generation
