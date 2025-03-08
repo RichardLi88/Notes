@@ -4,6 +4,8 @@ Moore’s Law is an observation that the number of transistors on an integrated 
 Importance:
 - This projection is important as it enables long-term planning for research and development. 
 - Provides a standard to innovate continuous growth
+- enables businesses to make strategic investments 
+	- e.g. knows that the number of transistors will grow exponentially on an integrated circuit and will conserve money to always upgrade every few years.
 #### Question 2:
 Multi-core processing is a term to describe using multiple cores which can execute instructions independently and concurrently. 
 
@@ -34,11 +36,11 @@ Disadvantages
 $$
 F(A, B, C) = A\cdot B + A\cdot \overline B + B\cdot C + \overline B\cdot C
 $$
-Given $A\cdot B + A\cdot \overline B$  , can factor this expression into $A(B+\overline B$),  hence we can express the equation as
+Given $A\cdot B + A\cdot \overline B$  , we can factor this expression into $A(B+\overline B$) which simplifies to $A$,  hence we can express the equation as
 $$
 F(A, B, C) = A + B\cdot C + \overline B\cdot C
 $$
-Similarly for $B\cdot C + \overline B\cdot C$, output of B is irrelevant, yielding
+Similarly for $B\cdot C + \overline B\cdot C$, we can factor this expression into $C(B+\overline B)$ which simplifies to C,  yielding
 $$
 F(A, B, C) = A + C
 $$
@@ -51,10 +53,12 @@ Gate delay (also propagation delay) is the time it takes after changing the inpu
 	- causes output to spike to $1$ for a period due to delay in inverter converting $A$ to $\overline A$.
 - hence as more logic gates that are added, the more gate delay there is and it needs to be accounted for to ensure when you are reading the output it is stable.
 #### Question 6
-AMD Ryzen AI 365 series
-- has 50 Neural Processing Units
-- Specialized processor designed to accelerate neural network processing
-- enables faster and more efficient handling of AI tasks than traditional CPU's and GPU's
+AMD Ryzen AI series (Strix/Strix Halo)
+New Feature: Neural Processing Units (NPUs)
+- has 50 NPUs which is unique to the newer gen AI CPUs
+- NPUs are designed to accelerate neural network processing
+- they process large amounts of data in parallel (trillions of operations per second)
+- enables faster and more efficient handling for AI tasks
 - optimised for lower power consumption
-- AMD claims that its XDNA2 NPU has five times more compute capacity and twice the power efficiency compared to the previous generation
+- can free up CPU and GPU for other tasks boosting overall system performance
 - enables for faster matrix multiplication
