@@ -1,3 +1,4 @@
+#Algorithm 
 ## Exact Pattern matching: Introduction
 #### The exact pattern matching problem
 Given a reference text txt\[1...n] and a pattern pat\[1...m], find ALL occurrences, if any, of pat in txt.

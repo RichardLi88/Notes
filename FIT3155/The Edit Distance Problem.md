@@ -1,3 +1,4 @@
+#Algorithm
 ## Definition
 The edit distance problem is a way to formally classify how similar or dissimilar two strings of text are. For example, the words “computer” and “commuter” are similar, as we can change one into the other by just modifying one letter, ‘p’ to ‘m.’ The words “sport” and “sort” are similar, as one can be changed into the other by deleting one letter from the first (or equivalently, inserting a new letter into the second).
 
