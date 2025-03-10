@@ -1,4 +1,4 @@
-#Introduction
+#Introduction #Hardware 
 ## Why study this?
 - Understand how performance can be affected by coding style
 - Robustness can be affected by coding style
