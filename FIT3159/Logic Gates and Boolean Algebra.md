@@ -1,4 +1,4 @@
-
+   #Discrete
 ## Three basic logical operations
 #### AND
 - denoted by a dot
