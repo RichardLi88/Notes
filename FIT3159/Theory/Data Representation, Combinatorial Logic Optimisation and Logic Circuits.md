@@ -135,3 +135,9 @@ To write decimals, have the exponent set to 0, then at the end of the mantissa u
 - The result of real propagation delays is that some logic circuits will exhibit unwanted output behaviours, which are termed "hazards"
 - Hazards sometimes produce no impact on the behaviour of the circuit, but in some circuits can result in problems and incorrect logic behaviour
 - Robust design of logic requires that hazards be identified and the logic circuit changed to remove the hazard, or remove the conditions (inputs, timing) that cause the hazard to arise
+
+#### Static and dynamic hazards
+- static hazards: arive when an input change produces a short transient reversal in the output, before the output sttles to the state defined by its truth table
+- dynamic hazards: These arise in complex logic circuits in which multiple static hazards may exist, and where the delays through multiple paths to the output are not the same. As a result more than one transient output change may occur before the output has settled
+- must be addressed if designs sare to operate reliably 
+	- can usually fix by buffering output with a latch or altering logic design
