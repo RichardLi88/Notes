@@ -24,7 +24,7 @@ Example
 	- can be used to overwrite critical program variables
 	- overwrite function return address to point to either desired existing program code or code injected by hacker
 
-## Memory
+# Memory
 #### How is a program stored in the memory?
 - stored in segments
 - has
@@ -56,8 +56,8 @@ Example
 	- return address is pushed on stack
 	- jumps to function address
 - when executing function
-	- pushes the old frame base pointer to stack 
-	- sets frame base pointer to where end of stack is now (start of function reference)
+	- pushes the location (memory address ) of old frame base pointer to stack  (SFP) saved frame pointer
+	- sets frame base pointer to the cell storing the old frame base pointer
 	- pushed local variables on stack
 - returning function
 	- resets previous stack frame (set to old frame base pointer)
@@ -78,3 +78,10 @@ Example
 - the overflow might also corrupt existing data
 #### Custom code execution 
 - the overflowing bytes have to redirect the execution flow to the customised code
+
+#### Functions
+- each function will have its own stack frame
+
+#### Exploiting functions
+- need to calculate how many bytes before reaching the return address
+- then use buffer overflow to rewrite return address
