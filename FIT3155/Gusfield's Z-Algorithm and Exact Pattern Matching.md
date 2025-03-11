@@ -3,9 +3,15 @@
 #### The exact pattern matching problem
 Given a reference text txt\[1...n] and a pattern pat\[1...m], find ALL occurrences, if any, of pat in txt.
 ###### Naive Edition
+
+^e174d2
+
 For each letter in txt, start pattern matching with pat. This takes O(mn) time where m = length of txt and n = length of pat
 
 # Gusfield's Z-algorithm 
+
+^5194b1
+
 ###### Definition of Z$_{i}$ 
 For a string str\[1...n] define Z$_{i}$ ( for each position i > 1 in str) as the length of the longest substring starting at position i of str that matches that matches its prefix
 (i.e., str\[i...i+Z$_{1}$ -1] = str\[1...Z$_{1}$])

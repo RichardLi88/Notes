@@ -1,4 +1,3 @@
-## User stories
 As a \<type of user>, I want \<some goal> so that \<some reason>.
 - historically, user stories were deliberately kept informal
 
