@@ -85,3 +85,9 @@ Example
 #### Exploiting functions
 - need to calculate how many bytes before reaching the return address
 - then use buffer overflow to rewrite return address
+
+
+## Goals
+- get access to things that they are not authorised to
+	- use buffer overflow to rewrite the return address/authorisation
+- jump to its own code e.g. access the shellcode with root user access
