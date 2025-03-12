@@ -1,0 +1,6 @@
+- Union find
+- Topological sort
+- Dynamic Programming
+- Trees
+- Graphs
+- Recursion
