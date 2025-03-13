@@ -44,3 +44,39 @@ else (if Z$_{2}$ == 0)
 - Any iteratiion that explicitly performs comparisons ends as soon as a mismatch occurs, hence there are at most n - 1 mismatches
 - the number of matches (performed explicity) is at most n, because:
 	- r$_{k}$ >= r$_{k-1}$ (for all iterations)
+
+
+
+## Lab Questions
+1. Give an algorithm that takes in two string α and β of lengths m and n, and finds the longest suffix of α that exactly matches a prefix of β. Reason the run-time of your algorithm. 
+- have z_box store the longest suffix at position i
+- for pattern and text
+	- when looking for the longest suffix at position i+1 -> consider the longest suffix at i-1 (let's say length = 5) and check if pattern\[6] == text\[i] if yes then z_box\[i] = z_box\[i-1] + 1
+
+- brute force use standard z_box
+- conjecture 1
+	- for pattern and text
+		- at i, cycle through z_box backwards starting at z_box\[i-1] until z_box\[0] checking at cycle = k if i + z_box\[i-k] -1 == i. If so, return that number
+
+- potential method
+- for pattern and text
+	- z_box is List\[List\[int]]
+	- for z_box, at i, store the length of all suffix's for text\[i] that matches the prefix of pattern (in decreasing length order)
+	- for z_box, at i+1, check for all suffix's in z_box\[i] and at j check if text\[i+1] matches pattern\[z_box\[i]\[j]]
+	- O(pattern^2)
+
+- for pattern and text
+	- suffix_box = List\[int]
+	- l,r 
+	- while 
+	- index at 3 doing explicit matching and get l = 3 r = 9
+		- suffix_box\[4] = 4- index
+		- suffix_box\[5] = 5 - index
+		- suffix_box\[9] = 9 - index etc.
+	- if r doesn't traverse through any index, then longest prefix = 0
+		
+
+
+
+
+1. Given a string str\[1..n], let len(i) denote the length of the largest suffix of str\[i..n] that is also a prefix of str. Give an algorithm that computes len(i) values. Reason the run-time of your algorithm.
