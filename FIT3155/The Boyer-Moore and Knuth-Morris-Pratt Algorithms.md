@@ -10,10 +10,10 @@
 - to improve on the naive method, the Boyer-Moore incorporates three clever ideas:
 	- [[#^8dbd74|Right-to-left Scanning]]
 	- [[#^fa17c9|Bad Character shift rule]]
-	- [[#^577620|Good suffix shift rule]]
+	- Good suffix shift rule
 Extra:
 [[#^1b575a|Galil's Optimisation]]
-[[#^1a8347|Summary]]
+
 
 
 ### Right-to-left Scanning
@@ -42,7 +42,6 @@ $$
 
 ### Good suffix shift rule
 
-^577620
 Definition 1: $Z_{i}^{suffix}$
 Given **pat\[1...m]** define $Z_{i}^{suffix}$ for $i < m$, as the length of the longest substring ending at position i of **pat** that matches its suffix, i.e. **pat\[i-$Z_{i}^{suffix}$] = pat\[m - $Z_{i}^{suffix}$ + 1...m]**
 - Using the z-algorithm but manipulating it to store the greatest substring that matches up to point $x$.
