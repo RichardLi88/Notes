@@ -23,4 +23,12 @@ $$
 	- bus connections
 	- complex min term expressions
 - A Bus can take the value of anumber of signals, but must represent only one at a time
-- 
+
+
+## Equality Comparators
+- equality comparators produce a signal if the two words are equal
+
+## Magnitude Comparators
+- MSI chips are available for comparing the relative size of two words
+	- emit less than ,equal to and greater than signals
+	- circuits compare bit by bit accountinf for the positions of the MSB and LSB in each of tghe words being compared
