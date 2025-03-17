@@ -44,6 +44,7 @@ $$
 - The most commonly used latch is the D-latch
 - An N-bit register contains N latches
 - The terms "flip-flop" and "latch" are often used interchangeably
+
 #### The SR latch or flipflop
 ![[Pasted image 20250316214203.png]]
 - cannot use 1 1 input in S R latch
@@ -67,3 +68,8 @@ $$
 	- a data interface
 	- an address interface
 	- a control interface
+
+## Flip flops -> sequential logic
+- Unlike combinational logic, sequential logic remembers its current state and move from one state to anotehr as a result of changes in the input
+- if the input is not changed then the logic stays in the current state
+- sequential logic is essential if we are to generate the timing signals within a computer
