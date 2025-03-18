@@ -1,0 +1,4 @@
+- Better understanding of Operating Systems (Linux)
+- Distributed/Parallel computing
+- GPU programming
+- Networking Protocols
