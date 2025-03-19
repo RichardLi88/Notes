@@ -62,7 +62,10 @@ Example
 - returning function
 	- resets previous stack frame (set to old frame base pointer)
 	- jumps back to return address
+## Example
+![[Pasted image 20250320101347.png]]
 
+![[Pasted image 20250320101331.png]]
 ## 64-bit system difference
 - Large address space
 - Different register names: RSP, RBP and RIP instead of ESP, EBP, and EIP
