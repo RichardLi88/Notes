@@ -111,12 +111,16 @@ Example
 #### System-level mitigations
 - address randomization: randomize the start location of the memory, and other types of memory such as heap libraries, etc...
 - stack shield: copies the return address to another place to check whether it is modified
+- stackguard - modification place a guard between the return address and the buffer to detect the return address
+- hardware protection: modern CPU supports NX bit, OS can mark memory region as non-executable
 
 ## More memory exploits
 - format string
 	- format string is argument of format function that controls how some data is printed to terminal or in buffer
+	- exploit occurs when format is not defined
 	- C's printf family supports formatted I/O: print data in specific formats
-	- ```
+	- %d %x %s define type conversion of data
+		- 
 	
 ```C
 int int1 = 12;
@@ -127,7 +131,7 @@ printf("%d %x %s",int1,int1,str1);
 - damages to improper string formatting
 	- compiler will warn if number of format parameter is not same as the number of variables
 	- format string is optional
-		- if not found, variable is printed in default format, which opens to format string injection attacks
+			- if not found, variable is printed in default format, which opens to format string injection attacks
 
 ## Integer overflow
 - integer variables can overflow if one writes avalue larger (or smaller ) than the maximum value of that the integer can be
