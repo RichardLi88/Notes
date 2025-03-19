@@ -59,5 +59,31 @@ return_type function_name(parameters)
 ```C
 int x[4];
 int *px = &x[0]; //using *sets px as a pointer, using & gets the direct location                    of where the variable is stored
+// note that x will point to the first element x[0] as well
 
 ```
+
+#### Malloc
+```C
+#include <stdio>
+#include <stdlib.h>
+
+void main(){
+	char *name; //makes it a pointer
+	char *command;
+	name = (char*)malloc(10);
+	command = (char*)malloc(128);
+	printf("Enter your name:")
+	gets(name);
+	printf("Hello %s\n",name);
+	system(command);
+}
+
+```
+- malloc stands for memory allocation
+	- malloc(10) is an allocation of 10 bytes of uninitalised memory
+	- naturally a void* pointer 
+	- using (char*) casts it to a char pointer
+###### Differences between * and &
+- * makes it a pointer that points to the memory address (e.g. points to the memory address of an array)
+- & gets the location (the memory address) of the variable itself

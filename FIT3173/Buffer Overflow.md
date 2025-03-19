@@ -66,7 +66,7 @@ Example
 ## 64-bit system difference
 - Large address space
 - Different register names: RSP, RBP and RIP instead of ESP, EBP, and EIP
-- Up to 6 arguments are passsed via registers, only rest is pushed on stack
+- Up to 6 arguments are passed via registers, only rest is pushed on stack
 
 ## Consequences when assigning to address bigger than buffer
 #### Nothing 
@@ -91,3 +91,52 @@ Example
 - get access to things that they are not authorised to
 	- use buffer overflow to rewrite the return address/authorisation
 - jump to its own code e.g. access the shellcode with root user access
+
+
+## How to prevent buffer overflow
+- ban unsafe functions (e.g., read, gets)
+- use safer functions such as fgets, strncat from <strsafe.h> or other safe libraries
+	- takes the length as explicit parameter do not rely on null termination
+- always do bounds checking
+- use thorough testing and code reviews
+
+
+#### Insecure coding
+- inputs come from users in a myriad ways:
+	- text inputs
+	- packets
+	- environment variables
+	- file input
+
+#### System-level mitigations
+- address randomization: randomize the start location of the memory, and other types of memory such as heap libraries, etc...
+- stack shield: copies the return address to another place to check whether it is modified
+
+## More memory exploits
+- format string
+	- format string is argument of format function that controls how some data is printed to terminal or in buffer
+	- C's printf family supports formatted I/O: print data in specific formats
+	- ```
+	
+```C
+int int1 = 12;
+char str1[6];
+strcpy(str1,"hello");
+printf("%d %x %s",int1,int1,str1);
+```
+- damages to improper string formatting
+	- compiler will warn if number of format parameter is not same as the number of variables
+	- format string is optional
+		- if not found, variable is printed in default format, which opens to format string injection attacks
+
+## Integer overflow
+- integer variables can overflow if one writes avalue larger (or smaller ) than the maximum value of that the integer can be
+
+
+## Array indexing errors
+- "Negative indexing" errors
+
+
+## Read overflow
+- when asking for read, will take in the length as input
+	- if you only give 3 letters as input and specify that the length is 500 letters then it will respond with a message of length 500, giving you access to older messages/other information

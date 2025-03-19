@@ -168,3 +168,5 @@
 | Ctrl + Alt + b         | Open Brave        |
 | Ctrl + Shift + Alt + P | poweroff          |
 | Ctrl + Shift + Alt + S | Sign Out          |
+## Surround
+![[Pasted image 20250318231029.png]]

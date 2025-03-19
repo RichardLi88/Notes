@@ -51,7 +51,7 @@ The matched prefix value $mp(k+1)$, associated with the suffix $\textbf {pat} [k
 
 ### Galil's optimisation
 
-Consider some general iteration where pat\[1...m] is being compared with txt\[j...j+m-1] via a right-to-left scna. Assum that the pattern matches the text down to some position k + 1,
+Consider some general iteration where pat\[1...m] is being compared with txt\[j...j+m-1] via a right-to-left scan. Assume that the pattern matches the text down to some position k + 1,
 $$
 pat[k+1...m] = txt[j+k...j+m-1]
 $$
