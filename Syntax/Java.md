@@ -30,8 +30,25 @@ Arrays.asList(1,2,3); //creates a mutable list (cannot add or remove elements bu
 
 List.of(1,2,3); //create immutable List
 
+//filling arrays;
+int[] arr = new int[8]; //initiates new array of length 8
+Arrays.fill(arr,5); //fills the array with 5
+
 // deep comparing arrays
 Arrays.equals(arr1,arr2); //will deep compare the arrays
+
+//copying part of array into to get subArray
+int[] myArray = {1,2,3,4,5};
+int[] newArray = Arrays.copyOfRange(myArray,0,3); //copies {1,2,3}
+
+//printing arrays
+//using Arrays.toString
+System.out.println(Arrays.toString(newArray));
+
+//printing 2D arrays
+//using Arrays.deepToString
+int[][] arr;
+System.out.println(Arrays.deepToString(arr));
 ```
 
 ## Math
@@ -92,6 +109,8 @@ String backToString = new String(myArray)//back to String
 String xStr = backToString.trim() //trims the String
 
 
+//for array lists
+Collections.max(list);
 ```
 
 ## ArrayList
@@ -127,6 +146,20 @@ Collections.sort(cars,Collections.reverseOrder());
 ArrayList<Integer> newList = new ArrayList<>(Collections.ncopies(10,0));
 //where first argument (0) is the number of copies, and second argument is the value
 
+//for list of lists
+ArrayList<ArrayList<Integer>> listOfLists = new ArrayList<>();
+for (int i = 0; i < randomNumber; i++) {
+	listOfLists.add(new ArrayList<>());
+}
+
+//to then write in arrayList
+listOfLists.get(5).add(5); //appends to 5th list in ListOfLists
+
+//to modify 
+listOfLists.get(5).set(5,value); //sets value to list[5][5]
+
+//get subList
+newList.subList(index1,index2); //gets subList starting at index1
 ```
 
 ## HashMap
@@ -216,6 +249,9 @@ queue.poll();
 queue.peek()
 
 queue.isEmpty(); //returns boolean 
+
+//to add new object straight to queue
+queue.add(new int[]{1,2,3,4,5});
 ```
 
 ## Priority Queues(heap)
