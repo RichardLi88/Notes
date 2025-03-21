@@ -87,3 +87,17 @@ void main(){
 ###### Differences between * and &
 - * makes it a pointer that points to the memory address (e.g. points to the memory address of an array)
 - & gets the location (the memory address) of the variable itself
+
+
+## Memory allocation methods
+malloc -> memory allocation
+calloc -> memory allocation for arrays: takes in number of elements and element size
+```C
+#include <stdlib.h>
+void *calloc(size_t num, size_t size);
+```
+realloc -> reallocates memory
+```C
+#include <stdlib.h>
+void *realloc(void *ptr, size_t new_size);
+```
