@@ -68,7 +68,7 @@ Example
 ![[Pasted image 20250320101331.png]]
 ## 64-bit system difference
 - Large address space
-- Different register names: RSP, RBP and RIP instead of ESP, EBP, and EIP
+- Different register names: RSP, RBP and RIP instead of ESP (extended stack pointed), EBP, and EIP
 - Up to 6 arguments are passed via registers, only rest is pushed on stack
 
 ## Consequences when assigning to address bigger than buffer
