@@ -29,6 +29,9 @@ for (int[] row: myNumbers) { //loops through the rows in myNumbers (make sure ty
 Arrays.asList(1,2,3); //creates a mutable list (cannot add or remove elements but can change)
 
 List.of(1,2,3); //create immutable List
+
+// deep comparing arrays
+Arrays.equals(arr1,arr2); //will deep compare the arrays
 ```
 
 ## Math
@@ -230,5 +233,8 @@ queue.peek()
 
 
 queue.isEmpty(); //returns boolean 
+
+//converting from priority queue to int[] array
+queue.stream().mapToInt(Integer:intValue).toArray();
 ```
 
