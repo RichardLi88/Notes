@@ -17,7 +17,6 @@
 
 ## Vim
 
-
 #### Editing in visual mode
 
 | Shortcut name       | Control                                                    |
@@ -133,40 +132,5 @@
 | ds(      | delete brackets  |
 | dst      | remove html tags |
 
-## Linux Terminal
-
-| Command        | Usage            | Extra Flags          |
-| -------------- | ---------------- | -------------------- |
-| mkdir          | make directory   |                      |
-| rmdir          | remove directory |                      |
-| touch filename | create file      |                      |
-| rm filename    | remove file      | -rf: recursive force |
-| ls             | list files       |                      |
-|                |                  |                      |
-
-## Kitty Shortcuts
-
-#### Creating Terminals and arranging layouts
-
-
-| Shortcut                       | Usage                         |
-| ------------------------------ | ----------------------------- |
-| Ctrl + Shift + Enter           | Create new Terminal           |
-| Ctrl + Shift + Number          | switches to tab number        |
-| Ctrl + Shift + [ or ]          | switches to previous/next tab |
-| Ctrl + Shift + t               | create new tab for terminal   |
-| Ctrl + Shift + left/rightArrow | switches between tabs         |
-| Ctrl + Shift + Layout          | Switch layout                 |
-| Ctrl + Shift + o               | new tab                       |
-| tab                            | switch tab                    |
-## Ubuntu Shortcuts (Custom)
-
-| Shortcut               | Usage             |
-| ---------------------- | ----------------- |
-| Ctrl + Alt + t         | Open new terminal |
-| Ctrl + Alt + o         | Open Obsidian     |
-| Ctrl + Alt + b         | Open Brave        |
-| Ctrl + Shift + Alt + P | poweroff          |
-| Ctrl + Shift + Alt + S | Sign Out          |
 ## Surround
 ![[Pasted image 20250318231029.png]]
