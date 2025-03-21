@@ -25,6 +25,10 @@ for (int[] row: myNumbers) { //loops through the rows in myNumbers (make sure ty
 		//do something
 	}
 } 
+
+Arrays.asList(1,2,3); //creates a mutable list (cannot add or remove elements but can change)
+
+List.of(1,2,3); //create immutable List
 ```
 
 ## Math
