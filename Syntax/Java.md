@@ -111,6 +111,9 @@ String xStr = backToString.trim() //trims the String
 
 //for array lists
 Collections.max(list);
+
+//String.valueOf vs Object.toString()
+String.valueOf(object); // will return a "null" if object is null but Object.toString() will throw a null pointer exception
 ```
 
 ## ArrayList
@@ -274,3 +277,38 @@ queue.isEmpty(); //returns boolean
 queue.stream().mapToInt(Integer:intValue).toArray();
 ```
 
+## Compare
+```Java
+//for custom classes must implement interface comparable and overwrite compareTo
+
+class Node implements Comparable<Node> {
+	private final int id;
+	private final int weight;
+
+	public Node(int id, int weight) {
+		this.id = id;
+		this.weight = weight;
+	}
+
+	public int getId() {
+		return this.id;
+	}
+
+	public int getWeight() {
+		return this.weight;
+	}
+
+	@Override
+	public int compareTo(Node otherNode) {
+		return Integer.compare(this.weight, otherNode.weight);
+	}
+
+}
+```
+
+##  Streams
+```Java
+List<String> numbers = List.of("1","2","3");
+
+List<Integer> intNumbers = numbers.stream().map(Integer::parseInt).toList();
+```
