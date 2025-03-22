@@ -1,2 +1,0 @@
-# Notes
-General note taking
